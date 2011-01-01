@@ -1,0 +1,131 @@
+/* $Id$ */
+
+/**
+ * @file
+ * Navigation Styling
+ */
+
+
+/*
+ * The active item in a Drupal menu
+ */
+li a.active {
+ /* color: #000;*/
+}
+
+/*
+ * Navigation bar
+ */
+#navigation {
+}
+
+#subnav {
+-moz-border-radius:5px 5px 5px 5px;
+border-bottom-left-radius: 5px 5px;
+border-bottom-right-radius: 5px 5px;
+border-top-left-radius: 5px 5px;
+border-top-right-radius: 5px 5px;
+background:none repeat scroll 0 0 #DDDDDD;
+border-color:#BBBBBB !important;
+border-style:ridge ridge ridge ridge;
+border-width:1px 1px 1px 1px;
+height:55px;
+margin:-1px auto 0;
+padding:5px;
+width:930px;
+}
+#subnav ul {
+margin-top: 30px;
+text-decoration:none ;
+}
+#subnav li {
+float: left;
+list-style: none outside none;
+}
+#subnav li {
+border-right:1px solid #BBBBBB;
+height:13px;
+padding:5px 10px;
+}
+#subnav a, #subnav a:visited {
+color:#BBBBBB;
+font-weight:bold;
+}
+#subnav li:hover, #subnav a:hover{
+color:#333333 !important;
+}
+ul#main-menu {
+-moz-border-radius:5px 5px 5px 5px;
+border-bottom-left-radius: 5px 5px;
+border-bottom-right-radius: 5px 5px;
+border-top-left-radius: 5px 5px;
+border-top-right-radius: 5px 5px;
+background: url("/sites/all/themes/senelite/images/menu_bg.jpg") repeat scroll 0 0 transparent !important;
+height: 32px;
+border: 1px ridge #BBBBBB;
+font-size: 13px;
+}
+#main-menu a{
+color: #FFFFFF;
+font-family:"Helvetica Neue",Arial,Helvetica,Geneva,sans-serif ;
+padding: 7px 10px 0;
+display: block;
+height: 25px;
+font-weight: bold;
+text-decoration: none;
+}
+#main-menu li{
+height: 32px;
+border-right: 1px  ridge #DDDDDD;
+}
+#main-menu li:hover, #main-menu a:hover{
+background:url("/sites/all/themes/senelite/images/menu_bg_active.jpg") repeat scroll 0 0 transparent !important;
+color:#94C444 !important;
+}
+
+#main-menu li.active{
+background:url("/sites/all/themes/senelite/images/menu_bg_active.png") repeat scroll 0 0 transparent !important;
+color:#94C940 !important;
+height: 33px;
+border-top:2px;
+}
+#main-menu  li.active.first{
+background:url("/sites/all/themes/senelite/images/menu_bg_active.png") repeat scroll 0 0 transparent !important;
+-moz-border-radius:5px 0 0 5px;
+border-bottom-left-radius: 5px 5px;
+border-top-left-radius: 5px 5px;
+color:#94C940 !important;
+height: 32px;
+border-top:2px;
+}
+#navbar_search #search{
+margin-top:5px;
+margin-right:25px;
+}
+#search-theme-form {
+float:right;
+}
+
+.region-navigation {
+}
+
+/*
+ * Primary and Secondary menu links
+ */
+#main-menu {
+}
+
+#secondary-menu {
+}
+
+/*
+ * Menu blocks
+ */
+.block-menu {
+}
+
+/*
+ * "Menu block" blocks. See http://drupal.org/project/menu_block
+ */
+.block-menu_block {
+}
