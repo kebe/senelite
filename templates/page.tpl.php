@@ -214,6 +214,13 @@
       <?php if ($primary_links || $navigation): ?>
         <div id="navigation"><div class="section clearfix">
 			<div id="navbar_search"><?php print $search_box; ?></div>
+			<div id="soc_media_icons">
+				<div id="icons" >
+					<a href="#"><img src="sites/all/themes/senelite/images/facebook.png"/> </a>
+					<a href="#"><img src="sites/all/themes/senelite/images/twitter.png"/> </a>
+					<a href="#"><img src="sites/all/themes/senelite/images/youtube.png"/> </a>
+				</div>
+			</div>
           <?php print theme(array('links__system_main_menu', 'links'), $primary_links,
             array(
               'id' => 'main-menu',

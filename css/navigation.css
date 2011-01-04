@@ -37,6 +37,7 @@ width:930px;
 #subnav ul {
 margin-top: 30px;
 text-decoration:none ;
+font-size: 0.9em;
 }
 #subnav li {
 float: left;
@@ -63,7 +64,7 @@ border-top-right-radius: 5px 5px;
 background: url("/sites/all/themes/senelite/images/menu_bg.jpg") repeat scroll 0 0 transparent !important;
 height: 32px;
 border: 1px ridge #BBBBBB;
-font-size: 13px;
+font-size: 1.1em;
 }
 #main-menu a{
 color: #FFFFFF;
@@ -80,7 +81,7 @@ border-right: 1px  ridge #DDDDDD;
 }
 #main-menu li:hover, #main-menu a:hover{
 background:url("/sites/all/themes/senelite/images/menu_bg_active.jpg") repeat scroll 0 0 transparent !important;
-color:#94C444 !important;
+color:black !important;
 }
 
 #main-menu li.active{
@@ -106,6 +107,11 @@ margin-right:25px;
 float:right;
 }
 
+#soc_media_icons  #icons{
+float:right;
+margin-top:5px;
+margin-right:55px;
+}
 .region-navigation {
 }
 

@@ -68,6 +68,7 @@ body {
 
 #logo img {
   vertical-align: bottom;
+  padding-left: 90px;
 }
 
 #name-and-slogan /* Wrapper for website name and slogan */ {

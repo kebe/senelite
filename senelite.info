@@ -63,6 +63,7 @@ conditional-stylesheets[if lte IE 6][all][] = css/ie6.css
   ; page.tpl.php template.
 regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
+regions[soc_media_icons]     = Social Media Icons
 regions[front_rotator_image]  = Front Rotator image
 regions[front_polling]  = Front Polling
 regions[navigation]     = Navigation bar
