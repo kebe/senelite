@@ -241,6 +241,26 @@ text-decoration: none ;
 
 
 /* Front page additions*/
+ 
+.region-featured-posts .view-display-id-block_1 .views-row{
+	float:left;
+	padding-right:45px;
+	margin-bottom:10px;
+}
+.region-featured-posts .view-display-id-block_1 .views-row img{
+ border:1px solid #021a40;
+}
+
+
+.view-display-id-page_1 .views-row img{
+	float:left;
+	padding-right: 15px;
+	padding-bottom: 35px;
+}
+.view-display-id-page_1 .views-row {
+clear:both;
+}
+
 .region-front-rotator-image {
 	width: 590px;
 	height: 300px;

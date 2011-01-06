@@ -8,12 +8,11 @@
 
         <?php print $breadcrumb; ?>
 		
-		<?php print $front_rotator_image; ?>
-		<?php print $front_polling; ?>
+		<?php print $featured_posts; ?>
+		<div style="clear:both"></div>
+		<?php /*print $front_rotator_image; */ ?>
+		<?php/* print $front_polling; */?>
 		
-        <?php if ($title): ?>
-          <h1 class="title"><?php print $title; ?></h1>
-        <?php endif; ?>
         <?php print $messages; ?>
 
         <?php if ($tabs): ?>
