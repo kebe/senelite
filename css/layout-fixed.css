@@ -244,7 +244,7 @@ text-decoration: none ;
  
 .region-featured-posts .view-display-id-block_1 .views-row{
 	float:left;
-	padding-right:45px;
+	margin-right:45px;
 	margin-bottom:10px;
 }
 .region-featured-posts .view-display-id-block_1 .views-row img{
@@ -253,9 +253,10 @@ text-decoration: none ;
 
 
 .view-display-id-page_1 .views-row img{
+	border:1px solid #021a40;
 	float:left;
-	padding-right: 15px;
-	padding-bottom: 35px;
+	margin-right: 15px;
+	margin-bottom: 35px;
 }
 .view-display-id-page_1 .views-row {
 clear:both;
