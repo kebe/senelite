@@ -52,7 +52,7 @@ padding:5px 10px;
 color:#BBBBBB;
 font-weight:bold;
 }
-#subnav li:hover, #subnav a:hover{
+#subnav li:hover, #subnav a:hover, #subnav a.active-trail{
 color:#333333 !important;
 }
 ul#main-menu {
@@ -84,7 +84,7 @@ background:url("/sites/all/themes/senelite/images/menu_bg_active.jpg") repeat sc
 color:black !important;
 }
 
-#main-menu li.active{
+#main-menu li.active-trail{
 background:url("/sites/all/themes/senelite/images/menu_bg_active.png") repeat scroll 0 0 transparent !important;
 color:#94C940 !important;
 height: 33px;
@@ -147,4 +147,10 @@ margin-bottom: 35px;
 .view-taxonomy-term .views-row {
 
 clear:both;
+}
+
+/* views pagination styling*/
+.pager a.active {
+	padding:0.2em;
+	border:1px solid;
 }
