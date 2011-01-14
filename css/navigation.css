@@ -137,20 +137,3 @@ margin-right:55px;
 }
 
 
-/* Taxonomy page*/
-.view-taxonomy-term img {
-border:1px solid #021a40;
-float:left;
-margin-right: 15px;
-margin-bottom: 35px;
-} 
-.view-taxonomy-term .views-row {
-
-clear:both;
-}
-
-/* views pagination styling*/
-.pager a.active {
-	padding:0.2em;
-	border:1px solid;
-}

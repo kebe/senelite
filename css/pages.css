@@ -315,3 +315,60 @@ ul.links li {
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
 }
+
+/*----------------------*/
+/* Front page additions */
+/*----------------------*/
+ 
+ /*front page featured-news*/
+#front-page-featured-news  .views-row{
+	float:left;
+	margin-right:40px;
+	margin-bottom:10px;
+}
+#front-page-featured-news  .views-row img{
+ border:1px solid #021a40;
+}
+
+ /*front page view*/
+#home-page-view .views-row img{
+	border:1px solid #021a40;
+	margin-right: 15px;
+	margin-bottom: 0px;
+}
+#home-page-view .views-row {
+clear:both;
+}
+#home-page-view .views-row .views-field-body{
+padding-top:0px;
+padding-bottom:10px;
+}
+#home-page-view.views-row .views-field-title{
+font-size:1.3em;
+padding-bottom:5px;
+}
+
+/*inner page taxonomy view*/
+#main-categories-taxonomy-view  img {
+border:1px solid #021a40;
+float:left;
+margin-right: 15px;
+margin-bottom: 35px;
+} 
+#main-categories-taxonomy-view .views-row {
+clear:both;
+}
+
+/* views pagination styling*/
+.pager a.active {
+	padding:0.2em;
+	border:1px solid;
+}
+
+/*------------------*/
+/*Comments styling  */
+/*------------------*/
+#comment-form textarea{
+ width:400px;
+ height:75px;
+}

@@ -243,10 +243,11 @@
 
         </div> <!-- /.section, /#navigation -->
       <?php endif; ?>
+	
 
       <?php print $sidebar_first; ?>
 
-      <?php print $sidebar_second; ?>
+      <?php print $sidebar_second; ?>	
 
     </div></div> <!-- /#main, /#main-wrapper -->
 
