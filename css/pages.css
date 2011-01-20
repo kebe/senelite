@@ -323,18 +323,22 @@ ul.links li {
  /*front page featured-news*/
 #front-page-featured-news  .views-row{
 	float:left;
-	margin-right:40px;
+	margin-right:50px;
 	margin-bottom:10px;
 }
 #front-page-featured-news  .views-row img{
  border:1px solid #021a40;
 }
-
+#front-page-featured-news  .views-row .views-field-title{
+text-align:center;
+font-size:1em;
+font-weight:bold;
+}
  /*front page view*/
 #home-page-view .views-row img{
 	border:1px solid #021a40;
 	margin-right: 15px;
-	margin-bottom: 0px;
+	margin-bottom: 0px;		
 }
 #home-page-view .views-row {
 clear:both;
@@ -343,10 +347,17 @@ clear:both;
 padding-top:0px;
 padding-bottom:10px;
 }
-#home-page-view.views-row .views-field-title{
-font-size:1.3em;
+#home-page-view .views-row .views-field-title{
+font-size:1.5em;
+font-weight:bold;
+padding-top:10px;
 padding-bottom:5px;
+line-height:1.1em;
 }
+#home-page-view .views-row .views-field-title a{
+text-decoration:none;
+}
+
 
 /*inner page taxonomy view*/
 #main-categories-taxonomy-view  img {
@@ -358,11 +369,30 @@ margin-bottom: 35px;
 #main-categories-taxonomy-view .views-row {
 clear:both;
 }
+#main-categories-taxonomy-view .views-row .views-field-title {
+font-size:1.2em;
+font-weight:bold;
+padding-bottom:5px;
+}
 
 /* views pagination styling*/
-.pager a.active {
-	padding:0.2em;
+.view .pager a.active {
+	background:#EEE;
+	padding:0.2em 0.5em;
+	border:1px solid #ccc;
+	text-decoration:none;
+}
+.view .pager a.active:hover{
+	background:#CCC;
+}
+/*ul.pager li.pager-current {
+	padding:0.2em 0.5em;
+	background:#BBBBBB;
 	border:1px solid;
+}*/
+.view .item-list ul.pager li {
+	padding-left:0.3em;
+	padding-right:0.3em;
 }
 
 /*------------------*/
@@ -371,4 +401,26 @@ clear:both;
 #comment-form textarea{
  width:400px;
  height:75px;
+}
+#comments {
+padding-top:50px;
+font-size:0.9em;
+}
+#comments .comment {
+padding-top:5px;
+}
+#comments .indented {
+border-top:2px dotted #CCCCCC;
+}
+#comments  > .comment {
+border-top:2px solid #CCCCCC;
+}
+#comments  h2.title{
+padding-top:5px;
+padding-bottom:5px;
+border-top:2px solid #CCCCCC;
+}
+#comments .box {
+padding-top:25px;
+border-top:2px solid #CCCCCC;
 }

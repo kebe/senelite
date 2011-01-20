@@ -216,8 +216,8 @@
 			<div id="navbar_search"><?php print $search_box; ?></div>
 			<div id="soc_media_icons">
 				<div id="icons" >
-					<a href="#"><img src="/sites/all/themes/senelite/images/facebook.png"/> </a>
-					<a href="#"><img src="/sites/all/themes/senelite/images/twitter.png"/> </a>
+					<a target="blank" href="http://www.facebook.com/pages/Senelite/109328502423198?v=wall"><img src="/sites/all/themes/senelite/images/facebook.png"/> </a>
+					<a target="blank" href="http://twitter.com/senelite_tweet"><img src="/sites/all/themes/senelite/images/twitter.png"/> </a>
 					<a href="#"><img src="/sites/all/themes/senelite/images/youtube.png"/> </a>
 				</div>
 			</div>
@@ -234,8 +234,10 @@
           ?>
 
           <?php print $navigation; ?>
-        </div></div> <!-- /.section, /#navigation -->
+
+		  </div></div> <!-- /.section, /#navigation -->
       <?php endif; ?>
+	  		  <?php /*include 'navigation-hover.tpl.php'; */?> 
 	   <?php if ($subnav): ?>
         <div id="subnav">
 

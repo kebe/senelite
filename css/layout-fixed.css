@@ -88,15 +88,15 @@ padding-top: 35px;
 }
 
 .sidebar-second #content {
-  width: 760px;
+  width: 740px;
   margin-left: 0; /* LTR */
-  margin-right: -760px; /* LTR */ /* Negative value of #content's width + left margin. */
+  margin-right: -740px; /* LTR */ /* Negative value of #content's width + left margin. */
 }
 
 .two-sidebars #content {
-  width: 560px;
+  width: 540px;
   margin-left: 200px; /* LTR */ /* The width of .region-sidebar-first */
-  margin-right: -760px; /* LTR */ /* Negative value of #content's width + left margin. */
+  margin-right: -740px; /* LTR */ /* Negative value of #content's width + left margin. */
 }
 
 #content .section {
@@ -159,8 +159,8 @@ padding-top: 35px;
  */
 .region-sidebar-second {
   float: left; /* LTR */
-  width: 200px;
-  margin-left: 760px; /* LTR */ /* Width of content + sidebar-first. */
+  width: 220px;
+  margin-left: 740px; /* LTR */ /* Width of content + sidebar-first. */
   margin-right: -960px; /* LTR */ /* Negative value of .region-sidebar-second's width + left margin. */
   padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-second .section. */
 }
@@ -247,16 +247,24 @@ text-decoration: none ;
 	float:left;
 	margin-bottom:50px;
 }
+*/
 
-.region-front-polling {
-	width: 147px;
-	height: 300px;
-	margin-left: 605px;
+.block-poll {
+	-moz-border-radius:5px 5px 5px 5px;
+	border-bottom-left-radius: 5px 5px;
+	border-bottom-right-radius: 5px 5px;
+	border-top-left-radius: 5px 5px;
+	border-top-right-radius: 5px 5px;
+	height: 200px;
 	background: #EEE;
 	font-size: 0.7em;
 	border: 1px solid #DDD;
-	margin-bottom:50px;
-
 }
-*/
- 
+
+#block-block-4 {
+	-moz-border-radius:5px 5px 5px 5px;
+	border-bottom-left-radius: 5px 5px;
+	border-bottom-right-radius: 5px 5px;
+	border-top-left-radius: 5px 5px;
+	border-top-right-radius: 5px 5px;
+}

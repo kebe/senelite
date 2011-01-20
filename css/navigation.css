@@ -66,7 +66,7 @@ height: 32px;
 border: 1px ridge #BBBBBB;
 font-size: 1.1em;
 }
-#main-menu a{
+#main-menu > li a{
 color: #FFFFFF;
 font-family:"Helvetica Neue",Arial,Helvetica,Geneva,sans-serif ;
 padding: 7px 10px 0;
@@ -75,22 +75,23 @@ height: 25px;
 font-weight: bold;
 text-decoration: none;
 }
-#main-menu li{
+#main-menu > li{
 height: 32px;
 border-right: 1px  ridge #DDDDDD;
 }
-#main-menu li:hover, #main-menu a:hover{
+
+#main-menu > li:hover, #main-menu a:hover{
 background:url("/sites/all/themes/senelite/images/menu_bg_active.jpg") repeat scroll 0 0 transparent !important;
 color:black !important;
 }
 
-#main-menu li.active-trail{
+#main-menu > li.active-trail{
 background:url("/sites/all/themes/senelite/images/menu_bg_active.png") repeat scroll 0 0 transparent !important;
 color:#94C940 !important;
 height: 33px;
 border-top:2px;
 }
-#main-menu  li.active.first{
+#main-menu > li.active.first{
 background:url("/sites/all/themes/senelite/images/menu_bg_active.png") repeat scroll 0 0 transparent !important;
 -moz-border-radius:5px 0 0 5px;
 border-bottom-left-radius: 5px 5px;
@@ -136,4 +137,29 @@ margin-right:55px;
 .block-menu_block {
 }
 
+/*dropdown menu */
+.hovermenu{
+-moz-border-radius:0px 0px 5px 5px;
+border-bottom-left-radius: 5px 5px;
+border-bottom-right-radius: 5px 5px;
+border-top-left-radius: 0px 0px;
+border-top-right-radius: 0px 0px;
+background:none repeat scroll 0 0 #DDDDDD;
+/*border-color:#BBBBBB !important;
+border-style:ridge ridge ridge ridge;
+border-width:1px 1px 1px 1px; */
+border-bottom:1px solid #BBBBBB !important;
+border-right:1px solid #BBBBBB !important;
+border-left:1px solid #BBBBBB !important;
+margin:-1px auto 0;
+padding:5px;
+left:5px;
+width:938px;
+list-style-type:none;
+text-decoration:none;
+z-index:2;
+position:absolute;
+}
 
+#main-menu > li div { display: none; }
+#main-menu > li:hover div { display: block; }
