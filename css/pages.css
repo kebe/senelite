@@ -323,11 +323,17 @@ ul.links li {
  /*front page featured-news*/
 #front-page-featured-news  .views-row{
 	float:left;
-	margin-right:50px;
+	margin-right:5px;
+	margin-left:5px;
+	margin-top:60px;
 	margin-bottom:10px;
+	width:170px;
+	height:185px;
+	overflow:hidden;
 }
 #front-page-featured-news  .views-row img{
  border:1px solid #021a40;
+ margin-left:20px;
 }
 #front-page-featured-news  .views-row .views-field-title{
 text-align:center;

@@ -8,8 +8,7 @@
 
         <?php print $breadcrumb; ?>
 		
-		<?php print $featured_posts; ?>
-		<div style="clear:both"></div>
+
 		<?php /*print $front_rotator_image; */ ?>
 		<?php/* print $front_polling; */?>
 		

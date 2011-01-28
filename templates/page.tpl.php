@@ -245,8 +245,12 @@
 
         </div> <!-- /.section, /#navigation -->
       <?php endif; ?>
-	
+	  
+	  	<?php if ($is_front): ?>
+			<?php print $featured_posts; ?>
+        <?php endif; ?>
 
+		
       <?php print $sidebar_first; ?>
 
       <?php print $sidebar_second; ?>	
