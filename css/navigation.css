@@ -81,23 +81,22 @@ border-right: 1px  ridge #DDDDDD;
 }
 
 #main-menu > li:not(.active-trail):hover{
-background:none repeat scroll 0 0 #B5B1B5;
-background-image: -webkit-gradient(
+background:none repeat scroll 0 0 #94C940;
+/*background-image: -webkit-gradient(
     linear,
     left top,
     left bottom,
-    color-stop(0, #7D8080),
+    color-stop(0, #5A9954),
     color-stop(0.87, #5A9954)
 );
 background-image: -moz-linear-gradient(
     center top,
-    #7D8080 0%,
+    #5A9954 0%,
     #5A9954 87%
-);
+);*/
 
 }
 #main-menu > li:not(.active-trail):hover a {
-color:black ;
 }
 
 #main-menu > li.active-trail{
@@ -159,8 +158,8 @@ border-bottom-left-radius: 5px 5px;
 border-bottom-right-radius: 5px 5px;
 border-top-left-radius: 0px 0px;
 border-top-right-radius: 0px 0px;
-background:none repeat scroll 0 0 #B5B1B5;
-background-image: -webkit-gradient(
+background:none repeat scroll 0 0 #94C940;
+/*background-image: -webkit-gradient(
     linear,
     left top,
     left bottom,
@@ -171,7 +170,7 @@ background-image: -moz-linear-gradient(
     center top,
     #5A9954 0%,
     #94C940 87%
-);
+);*/
 /*border-color:#BBBBBB !important;
 border-style:ridge ridge ridge ridge;
 border-width:1px 1px 1px 1px; */
@@ -188,7 +187,7 @@ z-index:2;
 position:absolute;
 }
 .hovermenu li{
-border-right:1px solid black ;
+border-right:1px solid #DDDDDD ;
 }
 #main-menu > li div { display: none; }
 #main-menu > li:not(.active-trail):hover div { display: block; }
