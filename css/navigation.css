@@ -17,6 +17,8 @@ li a.active {
  * Navigation bar
  */
 #navigation {
+z-index:100;
+position:relative;
 }
 
 #subnav {
@@ -33,6 +35,7 @@ height:55px;
 margin:-1px auto 0;
 padding:5px;
 width:930px;
+
 }
 #subnav ul {
 margin-top: 30px;
@@ -65,6 +68,8 @@ background: url("/sites/all/themes/senelite/images/menu_bg.jpg") repeat scroll 0
 height: 32px;
 border: 1px solid #BBBBBB;
 font-size: 1.1em;
+
+width:958px;
 }
 #main-menu > li a{
 color: #FFFFFF;
@@ -127,6 +132,11 @@ float:right;
 margin-top:5px;
 margin-right:55px;
 }
+#soc_media_icons {
+padding-left:100px;
+position:absolute;
+}
+
 .region-navigation {
 }
 

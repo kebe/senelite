@@ -213,7 +213,7 @@
 	  <?php endif; ?>	
       <?php if ($primary_links || $navigation): ?>
         <div id="navigation"><div class="section clearfix">
-			<div id="navbar_search"><?php print $search_box; ?></div>
+			<!--<div id="navbar_search"><?php/* print $search_box; */?></div>-->
 			<div id="soc_media_icons">
 				<div id="icons" >
 					<a target="blank" href="http://www.facebook.com/pages/Senelite/109328502423198?v=wall"><img src="/sites/all/themes/senelite/images/facebook.png"/> </a>
