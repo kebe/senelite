@@ -1,9 +1,9 @@
-; $Id$
+; $Id: STARTERKIT.info.txt,v 1.16.2.2 2010/06/26 16:05:31 johnalbin Exp $
 
 
   ; The name and description of the theme used on the admin/build/themes page.
 name        = senelite
-description = senelite's theme
+description = Read the <a href="http://drupal.org/node/629510">online docs</a> or the included README.txt on how to create a Zen sub-theme.
 
   ; The screenshot used on the admin/build/themes page.
 screenshot = screenshot.png
@@ -26,22 +26,22 @@ base theme = zen
   ; an /extremely/ useful feature. See the excellent Drupal 6 Theme Guide at
   ; http://drupal.org/node/171209 for more details.
 stylesheets[all][]   = css/html-reset.css
-stylesheets[all][]   = css/wireframes.css
+;stylesheets[all][]   = css/wireframes.css
 stylesheets[all][]   = css/layout-fixed.css
-stylesheets[all][]   = css/page-backgrounds.css
-stylesheets[all][]   = css/tabs.css
-stylesheets[all][]   = css/messages.css
+;stylesheets[all][]   = css/page-backgrounds.css
+;stylesheets[all][]   = css/tabs.css
+;stylesheets[all][]   = css/messages.css
 stylesheets[all][]   = css/pages.css
 stylesheets[all][]   = css/block-editing.css
 stylesheets[all][]   = css/blocks.css
 stylesheets[all][]   = css/navigation.css
-stylesheets[all][]   = css/panels-styles.css
-stylesheets[all][]   = css/views-styles.css
+;stylesheets[all][]   = css/panels-styles.css
+;stylesheets[all][]   = css/views-styles.css
 stylesheets[all][]   = css/nodes.css
-stylesheets[all][]   = css/comments.css
-stylesheets[all][]   = css/forms.css
+;stylesheets[all][]   = css/comments.css
+;stylesheets[all][]   = css/forms.css
 stylesheets[all][]   = css/fields.css
-stylesheets[print][] = css/print.css
+;stylesheets[print][] = css/print.css
 ; stylesheets[handheld][] = css/mobile.css
 ; stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
 
@@ -61,13 +61,14 @@ scripts[] = js/navigation-hover.js
   ; To add a new region, copy Zen's page.tpl.php to your sub-theme's directory,
   ; add a line line to this file, and then add the new variable to your
   ; page.tpl.php template.
+  
+regions[subnav]         = Subnav bar
+regions[soc_media_icons]= Social Media Icons
+regions[featured_posts] = Featured Posts
+
 regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
-regions[soc_media_icons]     = Social Media Icons
-regions[featured_posts]     = Featured Posts
-
 regions[navigation]     = Navigation bar
-regions[subnav]     = Subnav bar
 regions[highlight]      = Highlighted content
 regions[content_top]    = Content top
 regions[content_bottom] = Content bottom

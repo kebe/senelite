@@ -1,4 +1,4 @@
-/* $Id$ */
+/* $Id: ie6.css,v 1.6 2009/11/04 20:16:50 johnalbin Exp $ */
 
 /**
  * @file
@@ -89,7 +89,23 @@ div.error /* High priority messages. See also the .error declaration below. */ {
   background-image: url(../images/messages-error-ie6.png);
 }
 
+#main-menu  li a{
+color: #FFFFFF;
+font-family:"Helvetica Neue",Arial,Helvetica,Geneva,sans-serif ;
+padding: 7px 10px 0;
+height: 25px;
+font-weight: bold;
+text-decoration: none;
+}
+#main-menu  li{
+height: 32px;
+border-right: 1px  ridge #DDDDDD;
+}
 
+#subnav {
+position:relative;
+z-index: -1;
+}
 /*
  * REFERENCES
  *

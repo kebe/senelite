@@ -1,4 +1,4 @@
-/* $Id$ */
+/* $Id: navigation.css,v 1.5 2009/11/04 19:42:41 johnalbin Exp $ */
 
 /**
  * @file
@@ -10,18 +10,23 @@
  * The active item in a Drupal menu
  */
 li a.active {
- /* color: #000;*/
+  color: #000;
 }
 
 /*
  * Navigation bar
  */
 #navigation {
-z-index:100;
-position:relative;
 }
 
-#subnav {
+.region-navigation {
+}
+
+/*
+ * Primary and Secondary menu links
+ */
+ 
+ #subnav {
 -moz-border-radius:5px 5px 5px 5px;
 border-bottom-left-radius: 5px 5px;
 border-bottom-right-radius: 5px 5px;
@@ -32,10 +37,11 @@ border-color:#BBBBBB !important;
 border-style:ridge ridge ridge ridge;
 border-width:1px 1px 1px 1px;
 height:55px;
-margin:-1px auto 0;
+margin:1px auto 0;
 padding:5px;
 width:930px;
-
+position:relative;
+z-index: -30;
 }
 #subnav ul {
 margin-top: 30px;
@@ -58,6 +64,10 @@ font-weight:bold;
 #subnav li:hover, #subnav a:hover, #subnav a.active-trail{
 color:#333333 !important;
 }
+
+#main-menu {
+width:958px;
+}
 ul#main-menu {
 -moz-border-radius:5px 5px 5px 5px;
 border-bottom-left-radius: 5px 5px;
@@ -68,8 +78,6 @@ background: url("/sites/all/themes/senelite/images/menu_bg.jpg") repeat scroll 0
 height: 32px;
 border: 1px solid #BBBBBB;
 font-size: 1.1em;
-
-width:958px;
 }
 #main-menu > li a{
 color: #FFFFFF;
@@ -119,6 +127,7 @@ color:#94C940 !important;
 height: 32px;
 border-top:2px;
 }
+/*
 #navbar_search #search{
 margin-top:5px;
 margin-right:25px;
@@ -126,26 +135,13 @@ margin-right:25px;
 #search-theme-form {
 float:right;
 }
-
+*/
 #soc_media_icons  #icons{
+position:absolute;
 float:right;
 margin-top:5px;
-margin-right:55px;
+margin-left:680px;
 }
-#soc_media_icons {
-padding-left:100px;
-position:absolute;
-}
-
-.region-navigation {
-}
-
-/*
- * Primary and Secondary menu links
- */
-#main-menu {
-}
-
 #secondary-menu {
 }
 

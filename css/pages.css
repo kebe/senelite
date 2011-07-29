@@ -1,4 +1,4 @@
-/* $Id$ */
+/* $Id: pages.css,v 1.18.2.3 2010/06/26 17:18:58 johnalbin Exp $ */
 
 /**
  * @file
@@ -66,9 +66,10 @@ body {
   padding: 0;
 }
 
-#logo  {
+#logo img {
+  margin-left:90px;
+  margin-right:200px;
   vertical-align: bottom;
-  margin-left: 90px;
 }
 
 #name-and-slogan /* Wrapper for website name and slogan */ {

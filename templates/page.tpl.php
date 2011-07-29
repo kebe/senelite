@@ -134,6 +134,7 @@
         ?>
 	<?php endif; ?>
   </div> <!--top_bar-->
+
   <?php if ($primary_links): ?>
     <div id="skip-link"><a href="#main-menu"><?php print t('Jump to Navigation'); ?></a></div>
   <?php endif; ?>
@@ -166,19 +167,16 @@
         </div> <!-- /#name-and-slogan -->
       <?php endif; ?>
 
-       <?php /*<?php if ($search_box): ?>
+      <?php if ($search_box): ?>
         <div id="search-box"><?php print $search_box; ?></div>
-      <?php endif; ?> */?>
+      <?php endif; ?>
 
       <?php print $header; ?>
 
     </div></div> <!-- /.section, /#header -->
 
     <div id="main-wrapper"><div id="main" class="clearfix<?php if ($primary_links || $navigation) { print ' with-navigation'; } ?>">
-	<?php if ($is_front): ?>
-	
-		<?php include 'front-page.tpl.php'; ?> 
-	<?php  else: ?> 
+
       <div id="content" class="column"><div class="section">
 
         <?php if ($mission): ?>
@@ -210,10 +208,9 @@
         <?php endif; ?>
 
       </div></div> <!-- /.section, /#content -->
-	  <?php endif; ?>	
+
       <?php if ($primary_links || $navigation): ?>
         <div id="navigation"><div class="section clearfix">
-			<!--<div id="navbar_search"><?php/* print $search_box; */?></div>-->
 			<div id="soc_media_icons">
 				<div id="icons" >
 					<a target="blank" href="http://www.facebook.com/pages/Senelite/109328502423198?v=wall"><img src="/sites/all/themes/senelite/images/facebook.png"/> </a>
@@ -235,44 +232,55 @@
 
           <?php print $navigation; ?>
 
-		  </div></div> <!-- /.section, /#navigation -->
+        </div></div> <!-- /.section, /#navigation -->
       <?php endif; ?>
-	  		  <?php /*include 'navigation-hover.tpl.php'; */?> 
+	  
+	  <?php /*include 'navigation-hover.tpl.php'; */?> 
 	   <?php if ($subnav): ?>
         <div id="subnav">
 
           <?php print $subnav; ?>
 
-        </div> <!-- /.section, /#navigation -->
-      <?php endif; ?>
-	  
-	  	<?php if ($is_front): ?>
+        </div> <!-- /#subnav -->
+       <?php endif; ?>
+	   
+	  <?php if ($is_front): ?>
 			<?php print $featured_posts; ?>
-        <?php endif; ?>
-
+      <?php endif; ?>
 		
       <?php print $sidebar_first; ?>
 
-      <?php print $sidebar_second; ?>	
+      <?php print $sidebar_second; ?>
 
     </div></div> <!-- /#main, /#main-wrapper -->
-
-    
-
   </div></div> <!-- /#page, /#page-wrapper -->
-  
-  <?php if ($footer || $footer_message ): ?>
+
+    <?php if ($footer || $footer_message): ?>
       <div id="footer"><div class="section">
+
+        <?php /*print theme(array('links__system_secondary_menu', 'links'), $secondary_links,
+          array(
+            'id' => 'secondary-menu',
+            'class' => 'links clearfix',
+          ),
+          array(
+            'text' => t('Secondary menu'),
+            'level' => 'h2',
+            'class' => 'element-invisible',
+          ));
+       */ ?>
 
         <?php if ($footer_message): ?>
           <div id="footer-message"><?php print $footer_message; ?></div>
         <?php endif; ?>
 
         <?php print $footer; ?>
+		
 
       </div></div> <!-- /.section, /#footer -->
     <?php endif; ?>
-	
+
+
   <?php print $page_closure; ?>
 
   <?php print $closure; ?>

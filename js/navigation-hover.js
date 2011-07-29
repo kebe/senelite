@@ -1,5 +1,11 @@
  $(document).ready(function(){
- 
+if  ($.browser.msie && $.browser.version.substr(0,1)<7) 
+{
+ // browser is ie6 we don't want to use hover navigation
+}
+else
+{
+
 	$(".menu-234").append(' <div id="africamenu" class ="hovermenu">\
 		<ul id="africa-menu"> \
 			<li><a href="/africa/ethiopia" title="">ethiopia</a></li>\
@@ -82,4 +88,6 @@
 		</ul></div>'); 	
 
 	
+}
 });
+ 

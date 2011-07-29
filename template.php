@@ -1,5 +1,5 @@
 <?php
-// $Id$
+// $Id: template.php,v 1.21 2009/08/12 04:25:15 johnalbin Exp $
 
 /**
  * @file
@@ -21,13 +21,13 @@
  *   this, we have to override the theme function. You have to first find the
  *   theme function that generates the output, and then "catch" it and modify it
  *   here. The easiest way to do it is to copy the original function in its
- *   entirety and paste it here, changing the prefix from theme_ to senelite_.
+ *   entirety and paste it here, changing the prefix from theme_ to senel_.
  *   For example:
  *
  *     original: theme_breadcrumb()
- *     theme override: senelite_breadcrumb()
+ *     theme override: senel_breadcrumb()
  *
- *   where senelite is the name of your sub-theme. For example, the
+ *   where senel is the name of your sub-theme. For example, the
  *   zen_classic theme would define a zen_classic_breadcrumb() function.
  *
  *   If you would like to override any of the theme functions used in Zen core,
@@ -85,7 +85,7 @@ function senelite_theme(&$existing, $type, $theme, $path) {
  *   The name of the template being rendered (name of the .tpl.php file.)
  */
 /* -- Delete this line if you want to use this function
-function senelite_preprocess(&$vars, $hook) {
+function senel_preprocess(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */
@@ -99,7 +99,7 @@ function senelite_preprocess(&$vars, $hook) {
  *   The name of the template being rendered ("page" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function senelite_preprocess_page(&$vars, $hook) {
+function senel_preprocess_page(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */
@@ -113,11 +113,11 @@ function senelite_preprocess_page(&$vars, $hook) {
  *   The name of the template being rendered ("node" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function senelite_preprocess_node(&$vars, $hook) {
+function senel_preprocess_node(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 
   // Optionally, run node-type-specific preprocess functions, like
-  // senelite_preprocess_node_page() or senelite_preprocess_node_story().
+  // senel_preprocess_node_page() or senel_preprocess_node_story().
   $function = __FUNCTION__ . '_' . $vars['node']->type;
   if (function_exists($function)) {
     $function($vars, $hook);
@@ -134,7 +134,7 @@ function senelite_preprocess_node(&$vars, $hook) {
  *   The name of the template being rendered ("comment" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function senelite_preprocess_comment(&$vars, $hook) {
+function senel_preprocess_comment(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */
@@ -148,7 +148,7 @@ function senelite_preprocess_comment(&$vars, $hook) {
  *   The name of the template being rendered ("block" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function senelite_preprocess_block(&$vars, $hook) {
+function senel_preprocess_block(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */

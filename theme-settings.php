@@ -1,5 +1,5 @@
 <?php
-// $Id$
+// $Id: theme-settings.php,v 1.7 2008/09/11 09:36:50 johnalbin Exp $
 
 // Include the definition of zen_settings() and zen_theme_get_default_settings().
 include_once './' . drupal_get_path('theme', 'zen') . '/theme-settings.php';
@@ -13,10 +13,10 @@ include_once './' . drupal_get_path('theme', 'zen') . '/theme-settings.php';
  * @return
  *   A form array.
  */
-function senelite_settings($saved_settings) {
+function senel_settings($saved_settings) {
 
   // Get the default values from the .info file.
-  $defaults = zen_theme_get_default_settings('senelite');
+  $defaults = zen_theme_get_default_settings('senel');
 
   // Merge the saved variables and their default values.
   $settings = array_merge($defaults, $saved_settings);
@@ -26,10 +26,10 @@ function senelite_settings($saved_settings) {
    */
   $form = array();
   /* -- Delete this line if you want to use this setting
-  $form['senelite_example'] = array(
+  $form['senel_example'] = array(
     '#type'          => 'checkbox',
     '#title'         => t('Use this sample setting'),
-    '#default_value' => $settings['senelite_example'],
+    '#default_value' => $settings['senel_example'],
     '#description'   => t("This option doesn't do anything; it's just an example."),
   );
   // */

@@ -1,4 +1,4 @@
-// $Id$
+// $Id: README.txt,v 1.2 2009/11/08 18:28:49 johnalbin Exp $
 
 Your theme can add JavaScript files in two ways:
 
